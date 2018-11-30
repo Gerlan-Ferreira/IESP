@@ -11,7 +11,7 @@ public class GrupoDePesquisa {
 	private String curso;
 	private String tipo_pesquisa;
 	private String prof_resp;
-	
+	public static ArrayList GrupoDePesquisa = new ArrayList(); //arraylist criado para que as demais classes possam ter acesso a ele
 	
 	public GrupoDePesquisa(int codigo, String nome, int qtde_partic, String curso, String tipo_pesquisa,
 			String prof_resp) {
@@ -87,8 +87,6 @@ public class GrupoDePesquisa {
 		Scanner teclado = new Scanner(System.in);
 		
 		Scanner teclado2 = new Scanner(System.in);
-		
-		ArrayList GrupoDePesquisa = new ArrayList();
 		
 		int d = 0;
 		int opcao;

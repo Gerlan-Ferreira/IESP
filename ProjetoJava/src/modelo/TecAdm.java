@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class TecAdm extends Funcionario{
 
+	public static ArrayList TecAdm = new ArrayList();//arraylist criado para que as demais classes possam ter acesso a ele
 	
 	public TecAdm() {
 		
@@ -22,8 +23,6 @@ public class TecAdm extends Funcionario{
 	}
 	
 public void CadastrarTecnicoAdm() {
-		
-		ArrayList TecAdm = new ArrayList();
 		
 		Scanner tec = new Scanner(System.in);
 		Scanner teclado2 = new Scanner(System.in);

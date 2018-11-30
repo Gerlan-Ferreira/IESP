@@ -10,6 +10,7 @@ public class Projeto {
 	private String descricao;
 	private int carga_horaria;
 	private String grupo_pesquisa;
+	public static ArrayList Projeto = new ArrayList();//arraylist criado para que as demais classes possam ter acesso a ele
 	
 	public Projeto(int codigo, String titulo, String descricao, int carga_horaria, String grupo_pesquisa) {
 		this.codigo = codigo;
@@ -74,20 +75,16 @@ public class Projeto {
 		
 		Scanner teclado2 = new Scanner(System.in);
 		
-		ArrayList Projeto = new ArrayList();
-		
-		ArrayList GrupoDePesquisa = new ArrayList();
-		
 		int pj = 0;
 		int opcao;
 		int opcao2;
 		
-		if (GrupoDePesquisa.isEmpty()) {
+		if (GrupoDePesquisa.GrupoDePesquisa.isEmpty()) {
     		System.out.println("Nenhum grupo de pesquisa cadastrado até o momento. \n"
     				+ "Logo você não pode cadastrar um projeto sem um grupo de pesquisa.");
     		
-    	}else {
-    		
+		}else {
+   		
     		do {
 	    		System.out.println("--------------------------------");
 	    		System.out.println("\t Projetos");
@@ -117,11 +114,11 @@ public class Projeto {
 						projetos.setCarga_horaria(teclado.nextInt());
 						System.out.println("A qual grupo de pesquisa mostrado abaixo se refere esse projeto? ");
 						
-						for (int i = 0; i < GrupoDePesquisa.size(); i ++) {
+						for (int i = 0; i < GrupoDePesquisa.GrupoDePesquisa.size(); i ++) {
 							
 							System.out.println("------------------------------------");
 							System.out.println("Grupo de Pesquisa: ");
-							System.out.println(GrupoDePesquisa.get(i).toString());
+							System.out.println(GrupoDePesquisa.GrupoDePesquisa.get(i).toString());
 							System.out.println("------------------------------------");
 							
 						}
@@ -272,8 +269,6 @@ public class Projeto {
 	}
 	
 	public void AprovarEncerrarProjeto() {
-		
-		ArrayList Projeto = new ArrayList();
 		
 		Scanner teclado = new Scanner (System.in);
 		

@@ -9,7 +9,7 @@ public class Professor extends Funcionario {
 	
 	private String matricula;
 	private String turma;
-	
+	public static ArrayList Professor = new ArrayList();//arraylist criado para que as demais classes possam ter acesso a ele
 	
 	public Professor(String nome, String cpf, String email, String matricula, int codigo, String turma) {
 		super(nome, cpf, email, codigo);
@@ -43,8 +43,6 @@ public class Professor extends Funcionario {
 	}
 	
 	public void CadastrarProfessor() {
-		
-		ArrayList Professor = new ArrayList();
 		
 		Scanner tec = new Scanner(System.in);
 		Scanner teclado2 = new Scanner(System.in);
