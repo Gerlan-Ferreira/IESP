@@ -160,7 +160,7 @@ public class Professor extends Funcionario {
 									break;
 								case 3:
 									System.out.println("E-mail atual: " + aux2.getEmail());
-									System.out.println("Digite a nova matricula: ");
+									System.out.println("Digite o novo e-mail: ");
 									aux2.setEmail(teclado2.nextLine());
 								
 									System.out.println("Alterado com sucesso!");
@@ -183,8 +183,6 @@ public class Professor extends Funcionario {
 									}
 								
 							}while(opcao2 != 6);
-						}else {
-							System.out.println("Código inválido!");
 						}
 						
 						}
@@ -222,8 +220,6 @@ public class Professor extends Funcionario {
 							Professor.remove(i);
 							System.out.println("Removido com sucesso!");
 							
-						}else {
-							System.out.println("Código inválido!");
 						}
 					}
 					

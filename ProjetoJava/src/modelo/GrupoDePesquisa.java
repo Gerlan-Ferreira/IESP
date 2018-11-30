@@ -224,10 +224,7 @@ public class GrupoDePesquisa {
 									}
 								
 							}while(opcao2 != 6);
-						}else {
-							System.out.println("Código inválido!");
 						}
-						
 						}
 					}
 						break;
@@ -262,9 +259,6 @@ public class GrupoDePesquisa {
 							GrupoDePesquisa.remove(i);
 							System.out.println("Removido com sucesso!");
 							
-						}
-						else {
-							System.out.println("Código inválido!");
 						}
 					}
 					

@@ -216,8 +216,6 @@ public class Projeto {
 										}
 									
 								}while(opcao2 != 5);
-							}else {
-								System.out.println("Código inválido!");
 							}
 							
 							}
@@ -254,8 +252,6 @@ public class Projeto {
 								Projeto.remove(i);
 								System.out.println("Removido com sucesso!");
 								
-							}else {
-								System.out.println("Código inválido!");
 							}
 						}
 						
@@ -307,8 +303,6 @@ public class Projeto {
 				
 				if (aux2.getCodigo() == codProj) {
 					System.out.println("O projeto " + aux2.getTitulo() + " foi APROVADO!!!");
-				}else {
-					System.out.println("Código inválido!");
 				}
 			}
     		break;
@@ -332,9 +326,7 @@ public class Projeto {
 				
 				if (aux3.getCodigo() == codProj2) {
 					System.out.println("O projeto " + aux3.getTitulo() + " foi ENCERRADO!!!");
-				}else {
-					System.out.println("Código inválido!");
-				}	
+				}
 			}
 			
     		break;

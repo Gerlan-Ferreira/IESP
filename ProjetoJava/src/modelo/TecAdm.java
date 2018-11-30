@@ -143,8 +143,6 @@ public void CadastrarTecnicoAdm() {
 									}
 								
 							}while(opcao2 != 4);
-						}else {
-							System.out.println("Código inválido!");
 						}
 						
 						}
@@ -182,8 +180,6 @@ public void CadastrarTecnicoAdm() {
 							TecAdm.remove(i);
 							System.out.println("Removido com sucesso!");
 							
-						}else {
-							System.out.println("Código inválido!");
 						}
 					}
 					
