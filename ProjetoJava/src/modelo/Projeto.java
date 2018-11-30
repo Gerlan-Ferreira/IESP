@@ -84,7 +84,7 @@ public class Projeto {
 		
 		if (GrupoDePesquisa.isEmpty()) {
     		System.out.println("Nenhum grupo de pesquisa cadastrado até o momento. \n"
-    				+ "Logo você não pode cadastrar um projeto sem um grupo de pesquisa");
+    				+ "Logo você não pode cadastrar um projeto sem um grupo de pesquisa.");
     		
     	}else {
     		
